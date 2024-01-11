@@ -27,17 +27,17 @@ const buttons = [
   },
   {
     id: 5,
-    label: "7",
+    label: 7,
     color: "grey-dark",
   },
   {
     id: 6,
-    label: "8",
+    label: 8,
     color: "grey-dark",
   },
   {
     id: 7,
-    label: "9",
+    label: 9,
     color: "grey-dark",
   },
   {
@@ -47,17 +47,17 @@ const buttons = [
   },
   {
     id: 9,
-    label: "4",
+    label: 4,
     color: "grey-dark",
   },
   {
     id: 10,
-    label: "5",
+    label: 5,
     color: "grey-dark",
   },
   {
     id: 11,
-    label: "6",
+    label: 6,
     color: "grey-dark",
   },
   {
@@ -67,17 +67,17 @@ const buttons = [
   },
   {
     id: 13,
-    label: "1",
+    label: 1,
     color: "grey-dark",
   },
   {
     id: 14,
-    label: "2",
+    label: 2,
     color: "grey-dark",
   },
   {
     id: 15,
-    label: "3",
+    label: 3,
     color: "grey-dark",
   },
   {
@@ -87,7 +87,7 @@ const buttons = [
   },
   {
     id: 17,
-    label: "0",
+    label: 0,
     color: "grey-dark",
   },
   {
