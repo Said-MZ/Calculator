@@ -53,7 +53,7 @@ const AppProvider = ({ children }) => {
               prev = prev.replace("÷", "/");
             }
           }
-          return eval(prev);
+          return eval(prev).toFixed(3);
         });
       }
       if (

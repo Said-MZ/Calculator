@@ -5,7 +5,7 @@ const Button = ({ label, color }) => {
   const { handleClick, clear } = useGlobalContext();
   const btnStyles = `${label === 0 ? "col-span-2" : ""} ${
     color === "grey-light" && "text-black"
-  } bg-${color} rounded-full ${
+  } ${color} rounded-full ${
     color === "grey-light" ? "text-3xl sm:text-4xl" : "text-3xl sm:text-5xl "
   } font-medium hover:filter hover:brightness-${
     color === "grey-dark" ? "150" : "125"
