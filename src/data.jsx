@@ -1,24 +1,18 @@
-//   --white: #fefefe;
-//   --black: #000000;
-//   --grey-light: #a5a5a5;
-//   --grey-dark: #333333;
-//   --orange: #ff9e0b;
-
 const buttons = [
   {
     id: 1,
     label: "AC",
-    color: "grey-light",
+    color: "greyLight",
   },
   {
     id: 2,
     label: "+/-",
-    color: "grey-light",
+    color: "greyLight",
   },
   {
     id: 3,
     label: "%",
-    color: "grey-light",
+    color: "greyLight",
   },
   {
     id: 4,
@@ -28,17 +22,17 @@ const buttons = [
   {
     id: 5,
     label: 7,
-    color: "grey-dark",
+    color: "greyDark",
   },
   {
     id: 6,
     label: 8,
-    color: "grey-dark",
+    color: "greyDark",
   },
   {
     id: 7,
     label: 9,
-    color: "grey-dark",
+    color: "greyDark",
   },
   {
     id: 8,
@@ -48,17 +42,17 @@ const buttons = [
   {
     id: 9,
     label: 4,
-    color: "grey-dark",
+    color: "greyDark",
   },
   {
     id: 10,
     label: 5,
-    color: "grey-dark",
+    color: "greyDark",
   },
   {
     id: 11,
     label: 6,
-    color: "grey-dark",
+    color: "greyDark",
   },
   {
     id: 12,
@@ -68,17 +62,17 @@ const buttons = [
   {
     id: 13,
     label: 1,
-    color: "grey-dark",
+    color: "greyDark",
   },
   {
     id: 14,
     label: 2,
-    color: "grey-dark",
+    color: "greyDark",
   },
   {
     id: 15,
     label: 3,
-    color: "grey-dark",
+    color: "greyDark",
   },
   {
     id: 16,
@@ -88,12 +82,12 @@ const buttons = [
   {
     id: 17,
     label: 0,
-    color: "grey-dark",
+    color: "greyDark",
   },
   {
     id: 18,
     label: ".",
-    color: "grey-dark",
+    color: "greyDark",
   },
   {
     id: 19,

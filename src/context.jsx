@@ -3,12 +3,26 @@ import { createContext, useContext, useState } from "react";
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
+  const [clear, setClear] = useState("AC");
   const [operation, setOperation] = useState("0");
-
   const handleClick = (label) => {
+    if (
+      /[+x=÷-]/.test(operation.toString().charAt(operation.length - 1)) &&
+      /[+x=÷-]/.test(label.toString())
+    ) {
+      setOperation(operation.slice(0, -1) + label.toString());
+      return;
+    }
+
+    if (operation !== "0") setClear("C");
     try {
-      if (label === "AC") {
+      if (label === clear) {
         setOperation("0");
+        setClear("AC");
+        return;
+      }
+      if (operation.length > 24) {
+        return setOperation(`limit exceeded           `);
       }
       if (label === "+/-") {
         setOperation((prev) => {
@@ -42,7 +56,12 @@ const AppProvider = ({ children }) => {
           return eval(prev);
         });
       }
-      if (label !== "AC" && label !== "+/-" && label !== "%" && label !== "=") {
+      if (
+        label !== clear &&
+        label !== "+/-" &&
+        label !== "%" &&
+        label !== "="
+      ) {
         setOperation((prev) => {
           typeof label === "number" && label.toString();
           if (prev === "0") {
@@ -57,7 +76,7 @@ const AppProvider = ({ children }) => {
   };
 
   return (
-    <AppContext.Provider value={{ handleClick, operation }}>
+    <AppContext.Provider value={{ handleClick, operation, clear }}>
       {children}
     </AppContext.Provider>
   );

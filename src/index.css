@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --white: #fefefe;
-  --black: #000000;
-  --grey-light: #a5a5a5;
-  --grey-dark: #333333;
-  --orange: #ff9e0b;
-  
-}
-
 body {
   font-family: Helvetica, Arial, sans-serif;
 }

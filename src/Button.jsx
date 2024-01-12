@@ -2,11 +2,10 @@ import React from "react";
 import { useGlobalContext } from "./context";
 
 const Button = ({ label, color }) => {
-  const { handleClick } = useGlobalContext();
-
+  const { handleClick, clear } = useGlobalContext();
   const btnStyles = `${label === 0 ? "col-span-2" : ""} ${
     color === "grey-light" && "text-black"
-  } bg-[--${color}] rounded-full ${
+  } bg-${color} rounded-full ${
     color === "grey-light" ? "text-3xl sm:text-4xl" : "text-3xl sm:text-5xl "
   } font-medium hover:filter hover:brightness-${
     color === "grey-dark" ? "150" : "125"
@@ -18,10 +17,10 @@ const Button = ({ label, color }) => {
     <button
       className={btnStyles}
       onClick={() => {
-        handleClick(label);
+        handleClick(label === "AC" ? clear : label);
       }}
     >
-      {label}
+      {label === "AC" ? clear : label}
     </button>
   );
 };
